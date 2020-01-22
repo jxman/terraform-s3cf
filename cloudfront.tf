@@ -53,7 +53,7 @@ resource "aws_cloudfront_distribution" "website_cdn" {
     ssl_support_method  = "sni-only"
   }
 
-  custom_error_response = {
+  custom_error_response {
     error_caching_min_ttl = 5
     error_code            = 403
     response_code         = 403
